@@ -1,12 +1,44 @@
-# React + Vite
+# 🎫 Event Explorer with Ticket Purchase Email Capture
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a React-based application that fetches live event data from the Ticketmaster API. It allows users to:
 
-Currently, two official plugins are available:
+- Search events by **city**, **title**, and **date**
+- View detailed event information
+- Get redirected to ticket purchase pages **after providing their email**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Features
 
-## Expanding the ESLint configuration
+- 🔍 Event search functionality
+- 📅 Date filtering and keyword matching
+- 📄 Modal for viewing event details
+- 📧 Email capture before redirecting to external ticket links
+- 🌐 Live data from Ticketmaster API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📦 Technologies Used
+
+- React
+- Tailwind CSS (for UI)
+- Ticketmaster Discovery API
+
+## 🔧 Setup Instructions
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/your-username/event-explorer.git
+   cd event-explorer
+   npm install
+   npm run dev
+   ```
+
+## Project Structure
+
+bash
+Copy
+Edit
+src/
+├── components/
+│ ├── Home.js # Main event list and search logic
+│ ├── EventDetails.js # Modal showing event info and email form
+│ └── TicketModal.js # Optional standalone ticket modal (if used)
+└── App.js
